@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLK-OS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="boot-active">
+    <div id="boot-screen">
+        <div class="boot-logo">BLK-OS</div>
+        <div class="boot-text">Initializing system...</div>
+        <div class="boot-progress">
+            <div class="boot-bar"></div>
+        </div>
+    </div>
 
+    <div id="app" class="hidden">
+        <header class="top-bar">
+            <div class="brand">
+                <span class="brand-logo">BLK</span>
+                <span class="brand-name">BLK-OS</span>
+            </div>
+            <div class="top-actions">
+                <button id="diagnosticsBtn" class="btn-ghost">Diagnostics</button>
+                <button id="adminBtn" class="btn-primary" onclick="window.location.href='admin.html'">Admin</button>
+            </div>
+        </header>
+
+        <main class="main-layout">
+            <section class="sidebar">
+                <div class="panel">
+                    <h2>Search</h2>
+                    <input type="text" id="searchInput" placeholder="Search games...">
+                </div>
+
+                <div class="panel">
+                    <h2>Categories</h2>
+                    <ul id="categoryList">
+                        <li data-category="all" class="active">All</li>
+                        <li data-category="action">Action</li>
+                        <li data-category="arcade">Arcade</li>
+                        <li data-category="puzzle">Puzzle</li>
+                        <li data-category="retro">Retro</li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <h2>System</h2>
+                    <div class="system-info">
+                        <div><span>Status:</span> <span id="statusText">Online</span></div>
+                        <div><span>Ping:</span> <span id="pingText">-- ms</span></div>
+                        <div><span>Storage:</span> <span id="storageText">--</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="panel">
+                    <h2>Featured</h2>
+                    <div id="featuredGame" class="featured-card">
+                        <div class="featured-info">
+                            <h3 id="featuredTitle">Loading...</h3>
+                            <p id="featuredDesc">Please wait while we load your games.</p>
+                            <button id="playFeatured" class="btn-primary hidden">Play</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2>All Games</h2>
+                    <div id="gamesGrid" class="games-grid">
+                        <!-- Games injected by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <aside class="rightbar">
+                <div class="panel">
+                    <h2>Recently Played</h2>
+                    <ul id="recentList" class="list-small"></ul>
+                </div>
+
+                <div class="panel">
+                    <h2>Favorites</h2>
+                    <ul id="favoritesList" class="list-small"></ul>
+                </div>
+
+                <div class="panel">
+                    <h2>Diagnostics</h2>
+                    <div id="diagnosticsPanel" class="diagnostics">
+                        <div><span>FPS:</span> <span id="fpsText">--</span></div>
+                        <div><span>Uptime:</span> <span id="uptimeText">0s</span></div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/boot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
