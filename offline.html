@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLK-OS Offline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="offline-body">
+    <div class="offline-wrapper">
+        <div class="offline-card">
+            <h1>BLK-OS</h1>
+            <p class="offline-status">You are currently offline.</p>
+            <p class="offline-sub">Check your connection and try again.</p>
 
+            <div class="offline-actions">
+                <button id="retryBtn" class="btn-primary">Retry</button>
+                <button class="btn-ghost" onclick="window.location.href='admin.html'">Admin</button>
+            </div>
+
+            <div class="offline-indicator">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/offline.js"></script>
+</body>
+</html>
