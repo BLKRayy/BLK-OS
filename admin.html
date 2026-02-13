@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLK-OS Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="admin-body">
+    <div class="admin-wrapper">
+        <div class="admin-card">
+            <h1>BLK-OS Admin</h1>
+            <p class="admin-subtitle">Restricted access. Authorized users only.</p>
 
+            <form id="adminLoginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" autocomplete="off" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" class="btn-primary full">Login</button>
+                <p id="adminError" class="error-text hidden">Invalid credentials.</p>
+            </form>
+
+            <button class="btn-ghost full" onclick="window.location.href='index.html'">Back to BLK-OS</button>
+        </div>
+
+        <div id="adminDashboard" class="admin-dashboard hidden">
+            <header class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <button class="btn-ghost" onclick="window.location.href='index.html'">Exit</button>
+            </header>
+
+            <main class="admin-main">
+                <section class="panel">
+                    <h2>System Controls</h2>
+                    <p>Future admin features can go here (game management, user control, etc.).</p>
+                </section>
+
+                <section class="panel">
+                    <h2>Session Info</h2>
+                    <p id="adminSessionInfo"></p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
