@@ -1,1 +1,34 @@
-
+[
+  {
+    "id": "cyber-runner",
+    "title": "Cyber Runner",
+    "description": "Dash through the neon grid and avoid obstacles.",
+    "url": "https://example.com/cyber-runner",
+    "category": "action",
+    "thumbnail": "https://via.placeholder.com/300x180?text=Cyber+Runner"
+  },
+  {
+    "id": "neon-breaker",
+    "title": "Neon Breaker",
+    "description": "Retro brick breaker with a glowing twist.",
+    "url": "https://example.com/neon-breaker",
+    "category": "arcade",
+    "thumbnail": "https://via.placeholder.com/300x180?text=Neon+Breaker"
+  },
+  {
+    "id": "grid-puzzle",
+    "title": "Grid Puzzle",
+    "description": "Think ahead and clear the grid efficiently.",
+    "url": "https://example.com/grid-puzzle",
+    "category": "puzzle",
+    "thumbnail": "https://via.placeholder.com/300x180?text=Grid+Puzzle"
+  },
+  {
+    "id": "retro-blast",
+    "title": "Retro Blast",
+    "description": "Classic shooter vibes with modern effects.",
+    "url": "https://example.com/retro-blast",
+    "category": "retro",
+    "thumbnail": "https://via.placeholder.com/300x180?text=Retro+Blast"
+  }
+]
